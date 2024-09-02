@@ -3,7 +3,7 @@
   "displayName": "XLT Icon Theme",
   "description": "使用JetBrains Icon Theme for VSCode项目，向其中添加一些其他的图标，如有侵权，请联系我删除,优化不同项目，相同文件的不同图标",
   "publisher": "xlt-icon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "weipc",
     "email": "weipc853296@foxmail.com"
@@ -40,7 +40,11 @@
     "webstorm",
     "idea"
   ],
-  "activationEvents": [ "workspaceContains:**/*"],
+  "activationEvents": [
+    "workspaceContains:angular.json",
+    "workspaceContains:nest-cli.json",
+    "*"
+  ],
   "contributes": {
     "iconThemes": [
       {
@@ -70,7 +74,7 @@
     "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "vscode": "^1.1.36",
-     "webpack": "^4.39.3",
+    "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   }
 }
